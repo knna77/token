@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulario</title>
+    <script src="../scripts/script.js"></script>
+    <link rel="stylesheet" href="../css/estilos.css">
+  </head>
+  <body>
+    <p>Guardar usuario</p>
+    <form class="form"
+      action="https://localhost:8443/api/entra_usuario"
+      method="post" onsubmit="validacion()"
+    >
+        <legend><h1>Entrada</h1></legend>
+        <div  class="input-control">
+          <label for="nom">Nombre: </label>
+          <input type="text" name="name" id="name" />
+        </div>
+        <div  class="input-control">
+          <label for="nom">Contrassenya: </label>
+          <input type="text" name="pass" id="pass"  size="8" type="password" /><br />
+        </div>    
+          <input class="button" type="submit" value="Entar" />
+        
+      
+    </form>
+  </body>
+</html>
